@@ -59,6 +59,6 @@ def generate_data_description(save_dir, reorder):
 
 if __name__ == "__main__":
 
-    save_dir = './data/PA100k/'
+    save_dir = '/content/Strong_Baseline_of_Pedestrian_Attribute_Recognition/data/PA100k/'
     reoder = True
     generate_data_description(save_dir, reorder=True)

@@ -17,7 +17,7 @@ class AttrDataset(data.Dataset):
             f'dataset name {args.dataset} is not exist'
 
         data_path = get_pkl_rootpath(args.dataset)
-
+        data_path = "/content/Strong_Baseline_of_Pedestrian_Attribute_Recognition" + data_path[1:]
         dataset_info = pickle.load(open(data_path, 'rb+'))
 
         img_id = dataset_info.image_name
